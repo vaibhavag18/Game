@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+body {
+    background-color: #548687;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: -12%;
+    width: 100%;
+    max-width: 800px;
+}
+
+.game {
+    height: 130vmin;
+    width: 130vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    table-layout: fixed;
+    background-color: #ffffc7;
+}
+
+tr, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.75px;
+    font-size: 1rem;
+}
+
+#player1,
+#player2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+#player1 {
+    background-color: red;
+}
+
+#player2 {
+    background-color: blue;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-left: 2rem;
+    position: relative;
+}
+
+#dice {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#reset {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+td {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.ladder-img,
+.snake-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+}
+
+.message-box {
+    background-color: #ffffc7;
+    color: #000;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+#message-box {
+    margin-top: 1rem;
+    position: absolute;
+    padding: 1rem;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 0.5rem;
+    color: #856404;
+    font-size: 0.75rem;
+    text-align: center;
+    width: 100px; 
+    display: none; 
+}
+
